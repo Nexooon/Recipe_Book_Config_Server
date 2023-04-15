@@ -1,0 +1,13 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Nexooon/configs
+#          uri: file:C:\Users\huber\Downloads\configs_git\
+          username: Nexooon
+          password: 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
+#          default-label: "main"
