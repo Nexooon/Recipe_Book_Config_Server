@@ -18,11 +18,11 @@ pipeline {
         success {
             githubNotify(
                 status: 'SUCCESS',
-                account: "kkulak1",
+                account: "Nexooon",
                 credentialsId: "github",
                 context: 'Jenkins',
-                description: 'Build failed',
-                repo: "PIS_projekt",
+                description: 'Build succeeded',
+                repo: "config-server",
                 sha: env.GIT_COMMIT
             )
         }
@@ -30,11 +30,11 @@ pipeline {
         failure {
             githubNotify(
                 status: 'FAILURE',
-                account: "kkulak1",
+                account: "Nexooon",
                 credentialsId: "github",
                 context: 'Jenkins',
                 description: 'Build failed',
-                repo: "PIS_projekt",
+                repo: "config-server",
                 sha: env.GIT_COMMIT
             )
         }
